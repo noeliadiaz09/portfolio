@@ -183,6 +183,13 @@
       return;
     }
 
+    const recaptchaToken = grecaptcha.getResponse();
+    if (!recaptchaToken) {
+      setBtn('Confirma que no eres un robot.', '#febc2e', false);
+      setTimeout(() => setBtn(ORIGINAL_TEXT, '', false), 4000);
+      return;
+    }
+
     setBtn('Enviando...', '', true);
 
     try {
@@ -196,6 +203,7 @@
       lastSubmit = Date.now();
       setBtn('¡Mensaje enviado! ✓', '#28c840', true);
       form.reset();
+      grecaptcha.reset();
       setTimeout(() => setBtn(ORIGINAL_TEXT, '', false), 4000);
     } catch {
       setBtn('No se pudo enviar. Inténtalo de nuevo.', '#ff5f57', false);
