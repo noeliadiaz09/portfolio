@@ -875,6 +875,16 @@ img { max-width: 100%; display: block; }
 .btn-full { width: 100%; text-align: center; border: none; cursor: pointer; font-family: var(--font-sans); font-size: 1rem; }
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
+.recaptcha-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
 /* =============================================
    FOOTER
    ============================================= */
