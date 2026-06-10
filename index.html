@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self' https://api.emailjs.com; frame-ancestors 'none';" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta name="robots" content="index, follow" />
+  <title>Noelia Díaz López — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">NDL<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hola, soy</p>
+      <h1 class="hero-name">Noelia Díaz<span class="accent">.</span></h1>
+      <h2 class="hero-title">
+        <span class="typing-text" id="typing"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Técnica Superior en Desarrollo de Aplicaciones Web apasionada por construir
+        soluciones digitales <span class="accent">escalables y accesibles</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn-secondary">Contáctame</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-code">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">noelia.js</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">noelia</span> = {
+  <span class="c-prop">nombre</span>: <span class="c-string">"Noelia Díaz López"</span>,
+  <span class="c-prop">rol</span>: <span class="c-string">"Desarrolladora Web"</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-string">"JavaScript"</span>, <span class="c-string">"PHP"</span>,
+    <span class="c-string">"Laravel"</span>, <span class="c-string">"Python"</span>,
+    <span class="c-string">"Java"</span>
+  ],
+  <span class="c-prop">disponible</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">busca</span>: <span class="c-string">"primer empleo"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01. Sobre mí</span>
+        <h2 class="section-title">¿Quién soy?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Soy <strong>Técnica Superior en Desarrollo de Aplicaciones Web</strong> y
+            también cuento con el grado en <strong>Sistemas Microinformáticos y Redes</strong>.
+            Me apasiona crear experiencias digitales que combinen funcionalidad y diseño.
+          </p>
+          <p>
+            Mi trayectoria profesional antes de la tecnología me enseñó el valor de la
+            <strong>responsabilidad, la organización y el trabajo en equipo</strong> —
+            habilidades que ahora aplico cada día en el desarrollo de software.
+          </p>
+          <p>
+            Estoy en búsqueda de mi <span class="accent">primera oportunidad profesional</span>
+            en el sector tech, con muchas ganas de seguir aprendiendo y aportar valor
+            desde el primer día.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number accent">2</span>
+              <span class="stat-label">Titulaciones FP</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">5+</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number accent">100%</span>
+              <span class="stat-label">Motivación</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="foto.jpg" alt="Noelia Díaz López" class="profile-photo" />
+            <div class="image-border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02. Habilidades</span>
+        <h2 class="section-title">Mi stack tecnológico</h2>
+      </div>
+      <div class="skills-categories reveal">
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="accent">//</span> Lenguajes</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-php-plain colored"></i>
+              <span>PHP</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="accent">//</span> Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-xml-plain colored"></i>
+              <span>XML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="accent">//</span> Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-laravel-plain colored"></i>
+              <span>Laravel</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-phpunit-plain colored"></i>
+              <span>PHPUnit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="accent">//</span> Bases de datos</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <span>MariaDB</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title"><span class="accent">//</span> Sistemas y redes</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-linux-plain colored"></i>
+              <span>Linux</span>
+            </div>
+            <div class="skill-card">
+              <i class="devicon-github-original colored"></i>
+              <span>Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03. Proyectos</span>
+        <h2 class="section-title">Lo que he construido</h2>
+      </div>
+      <!-- PROYECTO DESTACADO -->
+      <article class="project-card project-featured reveal">
+        <div class="project-img">
+          <div class="project-img-bg mercapp-bg"></div>
+          <div class="project-overlay">
+            <a href="https://github.com/justo147/MercAPP" target="_blank" rel="noopener" class="project-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+            </a>
+          </div>
+          <span class="featured-badge">⭐ Proyecto Destacado — TFG</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">PHP 8</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Twig</span>
+            <span class="tag">Bootstrap 5</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">PHPUnit</span>
+            <span class="tag">PHPMailer</span>
+          </div>
+          <h3 class="project-title">MercAPP — Marketplace Web</h3>
+          <p class="project-desc">
+            Aplicación de compraventa e intercambio de artículos desarrollada como Trabajo de Fin de Grado.
+            Incluye autenticación con verificación por email, chat en tiempo real, pagos con Stripe,
+            búsqueda por proximidad geográfica (OpenStreetMap), panel de administración completo,
+            subida de imágenes en WebP y más de 25 endpoints JSON. Arquitectura MVC con PHP 8 puro y tests con PHPUnit.
+          </p>
+          <div class="project-features">
+            <span class="feature">💬 Chat en tiempo real</span>
+            <span class="feature">💳 Pagos Stripe</span>
+            <span class="feature">🗺️ Búsqueda por proximidad</span>
+            <span class="feature">🛡️ Panel admin</span>
+            <span class="feature">🧪 Tests PHPUnit</span>
+          </div>
+          <a href="https://github.com/justo147/MercAPP" target="_blank" rel="noopener" class="project-btn">
+            Ver en GitHub →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section class="section section-alt" id="formacion">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04. Formación</span>
+        <h2 class="section-title">Mi trayectoria</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2026 — Jun 2026 · Prácticas FCT</span>
+            <h3 class="timeline-title">Desarrolladora en Creartia Internet Consulting</h3>
+            <p class="timeline-place">Prácticas FCT — F.P.G.S. Desarrollo de Aplicaciones Web</p>
+            <p class="timeline-desc">
+              Desarrollo desde cero de un gestor de concesionario con CRM integrado,
+              en equipo con otros alumnos en prácticas. Aplicación tipo SaaS con panel de
+              administración, sistema de roles y permisos, configuraciones personalizables
+              por cliente, portales de cliente y proveedor, e integraciones con marketplaces.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">SaaS</span>
+              <span class="tag">CRM</span>
+              <span class="tag">Roles & Permisos</span>
+              <span class="tag">Panel Admin</span>
+              <span class="tag">Marketplaces</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3 class="timeline-title">F.P.G.S. Desarrollo de Aplicaciones Web</h3>
+            <p class="timeline-place">I.E.S. Isidro de Arcenegui y Carmona</p>
+            <p class="timeline-desc">
+              Programación backend y frontend, bases de datos, despliegue de aplicaciones web,
+              arquitectura cliente-servidor y desarrollo con frameworks modernos.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">PHP</span><span class="tag">JavaScript</span>
+              <span class="tag">Laravel</span><span class="tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — Prácticas FCT</span>
+            <h3 class="timeline-title">Prácticas en Radio y Televisión Marchena</h3>
+            <p class="timeline-place">Marchena, Sevilla</p>
+            <p class="timeline-desc">
+              Administración y mantenimiento del sitio web corporativo. Gestión e
+              implementación de infraestructuras de red internas para optimizar la
+              conectividad y rendimiento de la red local.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Administración web</span><span class="tag">Redes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">F.P.G.S. Sistemas Microinformáticos y Redes</h3>
+            <p class="timeline-place">I.E.S. Isidro de Arcenegui y Carmona</p>
+            <p class="timeline-desc">
+              Administración de sistemas, configuración de redes, soporte técnico y
+              gestión de infraestructuras IT.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Linux</span><span class="tag">Redes</span>
+              <span class="tag">Soporte técnico</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05. Contacto</span>
+        <h2 class="section-title">Hablemos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text reveal">
+          <p>
+            Estoy <span class="accent">disponible para nuevas oportunidades</span>.
+            Si tienes un proyecto en mente, buscas incorporar talento a tu equipo
+            o simplemente quieres charlar sobre tecnología, escríbeme.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:noeliadilop09@gmail.com" class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              noeliadilop09@gmail.com
+            </a>
+            <a href="tel:635254870" class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.1 2.18 2 2 0 012.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              635 254 870
+            </a>
+            <a href="https://www.linkedin.com/in/noeliadíazlópez" target="_blank" rel="noopener" class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/noeliadiaz09" target="_blank" rel="noopener" class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <form id="contactForm" novalidate autocomplete="off">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame en qué puedo ayudarte..." required></textarea>
+            </div>
+            <div class="hp-field" aria-hidden="true">
+              <input type="text" name="_hp" tabindex="-1" autocomplete="off" />
+            </div>
+            <button type="submit" class="btn-primary btn-full">Enviar mensaje →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Diseñado y desarrollado por <span class="accent">Noelia Díaz López</span></p>
+      <p class="footer-sub">HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
